@@ -14,14 +14,14 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border: 0px solid #008CFF;
+    border: 0px solid #1a90f1;
 }
 
 .logo-content {
     display: flex;
     flex-direction: row;
     align-items: center;
-    border: 0px solid #008CFF;
+    border: 0px solid #358cd3;
     width: 80%;
 }
 
@@ -40,7 +40,7 @@ body {
 }
 
 .address-book {
-    color: #42515F;
+    color: #0f161d;
 }
 
 * {
