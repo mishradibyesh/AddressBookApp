@@ -22,16 +22,70 @@
         </div>
     </header>
     <div class="form-content">
-        <form class="form">
+        <div class="head">
             <div class="form-head">
                 <span id="text"> PERSON ADDRESS FORM </span>
-                <span id="img"><a href="../pages/homePage.html" class="cancel-button"><img src="../assets/cancel.png" height="20" width="20"alt="" ></a></span>
+                <span id="img"><a href="../pages/homePage.html" class="cancel-button"><img src="../assets/Cancel-Button-PNG-Photo.png" height="20" width="20"alt="" ></a></span>
             </div>
+        </div>
     </div>
-    </form>
-    </div>
+    <form class="form">
+        <div class="row-content">
+            <div>
+                <label class="label text" for="name">Full Name</label>
+            </div>
+            <input class="input" type="text" id="name" name="name" placeholder="Your name" required>
+            <error-output class="text-error" for="text"></error-output>
+            <div class="phone">
+                <div id="phone-block">
+                    <label class="label text" for="phone">Phone Number</label>
+                </div>
+                <input class="input" type="tel" id="phone" name="phone" placeholder="Your phone" required>
+                <error-output class="text-error" for="phone"></error-output>
+            </div>
+            <div class="address">
+                <label class="label text" for="address">Address</label>
+                <textarea id="address" class="input" name="address" style="height:100px;"></textarea>
+            </div>
+            <div class="cityStateZip">
+                <span><label class="label city" for="city">city</label></span>
+                <span><label class="label state" for="state">state</label></span>
+                <span><label class="label zip" for="zip">zip</label></span>
 
-
+            </div>
+            <div class="cityStateZip">
+                <span><select class="city" name="city">
+                  <option value="city">Year</option>
+                  <option value='pune'>2021</option>
+                  <option value='ballia'>2020</option>
+                  <option value='ahmedabad'>2019</option>
+                  <option value='delhi'>2018</option>
+                  <option value='varansi'>2017</option>
+                  <option value='lucknow'>2016</option>
+              </select>
+            </span>
+                <span><select class="state" name="state">
+                <option value="state">Year</option>
+                <option value='up'>2021</option>
+                <option value='mp'>2020</option>
+                <option value='ap'>2019</option>
+                <option value='gujrat'>2018</option>
+                <option value='asam'>2017</option>
+                <option value='karnatka'>2016</option>
+            </select>
+          </span>
+                <span><select class="zip" name="zip">
+              <option value="zip">Year</option>
+              <option value='2021'>2021</option>
+              <option value='2020'>2020</option>
+              <option value='2019'>2019</option>
+              <option value='2018'>2018</option>
+              <option value='2017'>2017</option>
+              <option value='2016'>2016</option>
+          </select>
+        </span>
+            </div>
+        </div>
 
 </body>
 
