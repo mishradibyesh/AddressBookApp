@@ -163,3 +163,9 @@
         width: 300px;
         margin-right: 10px;
     }
+    
+    error-output {
+        font-size: 12px;
+        font-style: italic;
+        color: red;
+    }

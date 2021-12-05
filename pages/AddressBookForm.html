@@ -9,6 +9,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/AddressBokk.css">
+    <script type="text/javascript" src="../js/Addressbook.js"></script>
 </head>
 
 <body>
@@ -32,17 +33,21 @@
                 <label class="label text" for="name">Full Name</label>
                 <div class="row-content">
                     <input class="input" type="text" id="name" name="name" placeholder="Enter Name" required>
+                    <error-output class="name-error" for="name"></error-output>
                 </div>
 
-                <label class="label text" for="phoneNumber">Phone Number</label>
+                <label class="label text" for="phone">Phone Number</label>
                 <div class="row-content">
-                    <input class="input" type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter Phone Number" required>
+                    <input class="input" type="tel" id="phone" name="phone" placeholder="Enter Phone Number" required>
+                    <error-output class="phone-error" for="phone"></error-output>
                 </div>
 
-                <label class="label text" for="Address">Address</label>
+                <label class="label text" for="address">Address</label>
                 <div class="row-content">
-                    <textarea class="input" name="Address" id="Address" rows="4" placeholder="Enter Address"></textarea>
+                    <textarea class="input" name="address" id="address" rows="4" placeholder="Enter Address"></textarea>
+                    <error-output class="address-error" for="address"></error-output>
                 </div>
+
 
                 <div class="row">
                     <div class="input-content">
@@ -74,7 +79,7 @@
                     <div class="input-content">
                         <label class="label text" for="ZipCode">ZipCode</label>
                         <div class="row-content">
-                            <input class="input" type="number" id="ZipCode" name="ZipCode" placeholder="Enter Zip Code" required>
+                            <input class="input" type="tel" id="ZipCode" name="ZipCode" placeholder="Enter Zip Code" required>
                         </div>
                     </div>
                 </div>
