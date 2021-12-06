@@ -44,8 +44,9 @@ class AddressbookData {
     }
 
     set zip(zip) {
-        this._zip = zip;
-    }
+            this._zip = zip;
+        }
+        // tostring method overridden
     toString() {
         return 'Name = ' + this.name + ", Phone = " + this.phone + ", Address = " + this.address +
             ", City = " + this.city + ", State = " + this.state + ", Zip = " + this.zip;
