@@ -24,6 +24,25 @@ window.addEventListener('DOMContentLoaded', (event) => {
     });
 
 });
+// reset functionality
+const resetForm = () => {
+    setValue('#name', '');
+    setValue('#phone', '');
+    setValue('#address', '');
+    setValue('#city', 'City');
+    setValue('#state', 'State');
+    setValue('#zip', '');
+};
+
+const setTextValue = (id, value) => {
+    const element = document.querySelector(id);
+    element.textContent = value;
+}
+
+const setValue = (id, value) => {
+    const element = document.querySelector(id);
+    element.value = value;
+}
 
 // save functionality of submit button defined 
 const save = () => {
